@@ -1,6 +1,6 @@
 // Wrong Answer?
 
-#include <iostream>
+#include<bits/stdc++.h>
  
 using namespace std;
 
@@ -18,6 +18,7 @@ int checkprime(int num)
 		}
 		return 1;
 	}
+	return 0;
 }
 
 int genprime(int n1, int n2)
@@ -35,10 +36,11 @@ int genprime(int n1, int n2)
 		}
 	}
 	cout << "\n";
+	return 0;
 }
- 
- 
-int main(void)
+
+
+int main()
 {
 	int test;
 	cin >> test;
