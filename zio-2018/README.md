@@ -1,6 +1,6 @@
 # ZIO 2018
 
-### Info:
+## Info:
 [Info](https://www.iarcs.org.in/inoi/2018/)
 
 [Question Paper](https://www.iarcs.org.in/inoi/2018/zio2018/zio2018-question-paper.pdf)
