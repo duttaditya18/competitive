@@ -6,8 +6,13 @@ using namespace std;
 int countPoints (int p1, int q1, int p2, int q2) {
 	// p is x and q is z
 	// slope = rise / run
-	
-	int count;
+	if (p2 < p1)
+	{
+		int temp = p2;
+		p2 = p1;
+		p1 = temp;
+	}
+	int count=0;
 	int rise  = q1 - q2;
 	int run = p1 - p2;
 	float m = ((float) rise) / ((float) run);
@@ -23,7 +28,7 @@ int countPoints (int p1, int q1, int p2, int q2) {
 		cout << y << "\n";
 		
 		// check if y is an int
-	    if ((int) y == y) {
+	    if (floor(y) == y) {
 	    	count++;
 	        cout << "(" << x << ", " << y << ")\n";
 	    }
@@ -33,11 +38,11 @@ int countPoints (int p1, int q1, int p2, int q2) {
 }
 
 int main (void) {
-	/*
+	
 	int t;
 	cin >> t;
 	
-	for (int c = 0; c < t; c++) {
+	while(t--){
 		
 	int x1, y1, x2, y2, x3, y3;
 	cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
@@ -47,7 +52,8 @@ int main (void) {
 	int b = countPoints(x2, y2, x3, y3);
 	int c = countPoints(x3, y3, x1, y1);
 	
+	
+	cout<<a<<" "<<b<<" "<<c<<endl;
 	}
-	*/
-	cout << countPoints(1, 6, 4, 4);
+	//cout << countPoints(1, 6, 4, 4) <<endl;
 }
