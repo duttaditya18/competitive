@@ -3,6 +3,14 @@
 
 using namespace std;
 
+int gcd(int x, int y)
+{
+	if (y==0)
+	{
+		return x;
+	}
+	return gcd(y, x%y);
+}
 int countPoints (int p1, int q1, int p2, int q2) {
 	// p is x and q is z
 	// slope = rise / run
@@ -12,7 +20,16 @@ int countPoints (int p1, int q1, int p2, int q2) {
 		p2 = p1;
 		p1 = temp;
 	}
-	int count=0;
+	if (q2 < q1)
+	{
+		int temp = q2;
+		q2=q1;
+		q1 = temp;
+	}
+
+	int count=gcd (p2-p1, q2-q1) - 1;
+	
+	/*
 	int rise  = q1 - q2;
 	int run = p1 - p2;
 	float m = ((float) rise) / ((float) run);
@@ -29,11 +46,11 @@ int countPoints (int p1, int q1, int p2, int q2) {
 		
 		// check if y is an int
 	    if (floor(y) == y) {
-	    	count++;
+	    	//count++;
 	        cout << "(" << x << ", " << y << ")\n";
 	    }
 	}
-	
+	*/
 	return count;
 }
 
