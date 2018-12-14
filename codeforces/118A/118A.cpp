@@ -1,6 +1,7 @@
 // inserting into a string
 #include <iostream>
 #include <string>
+#include <cctype>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int main()
     if (!(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'y' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U' || str[i] == 'Y'))
     {
       newStr.insert((c), ".");
-      newStr.push_back(str[i]);
+      newStr.push_back(tolower(str[i]));
       c += 2;
     }
   }
