@@ -13,7 +13,6 @@ int main()
   int c = 0;
   for (int i = 0; i < str.size(); i++)
   {
-    cout << i << " : " << str[i] << " : " << newStr << endl;
     if (!(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'y' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U' || str[i] == 'Y'))
     {
       newStr.insert((c), ".");
