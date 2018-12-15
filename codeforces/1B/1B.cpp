@@ -74,7 +74,12 @@ int main()
 
       for (int i = 0; i < cStr.size(); i++)
       {
+        // each step, the thing is
+        // the first letter is multiplied by 26^(cStr.size() - 1)
+        // the first letter is multiplied by 26^0
         c *= 26;
+
+        // returns letter code
         c += (cStr[i] - 'A' + 1);
       }
 
