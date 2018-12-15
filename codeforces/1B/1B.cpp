@@ -47,6 +47,8 @@ int main()
 
       while (c > 0)
       {
+        // doing negation before everything because if c % 26 returned 0, 65 - 1 + m = 64 (@)
+        // this prevents the problem by converting it into a 'Z', m = (c - 1) % 26 = 25. so 65 - 1 + m = 90 (Z)
         m = (c - 1) % 26;
         ax = (char)(65 + m) + ax;
         c = (int)((c - m) / 26);
