@@ -19,9 +19,8 @@ int main()
     }
     else
     {
-      a[i] = max(a[i - 1], min(a[n - i], b - a[n - i]));
+      a[i] = max(a[i - 1], b - a[n - i]);
       a[n - i - 1] = b - a[i];
-      // cout << " | i: " << i << " | b: " << b << " | a[i - 1]: " << a[i - 1] << " | a[n - i]: " << a[n - i] << " | b - a[n - i]: " << b - a[n - i] << " | a[i]: " << a[i] << " | a[n - i - 1]: " << a[n - i - 1] << endl;
     }
   }
 
