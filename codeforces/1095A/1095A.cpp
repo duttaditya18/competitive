@@ -11,11 +11,13 @@ int main()
   cin >> t;
 
   int x = 0;
+  int i = 0;
 
-  for (int i = 1; i <= n && x < n; i++)
+  while (i < n)
   {
-    cout << t[x];
-    x = i * (i + 3) / 2;
+    cout << t[i];
+    x++;
+    i += x + 1;
   }
   return 0;
 }
