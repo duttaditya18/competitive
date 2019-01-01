@@ -5,8 +5,6 @@ using namespace std;
 
 int main(void)
 {
-  cout << UINTPTR_MAX;
-
   // Test Cases
   uint64_t t;
   cin >> t;
