@@ -42,17 +42,18 @@ int main()
     sort(u.begin(), u.end());
 
     // calc points
+    // score of the i'th person is the sum of the positions of its corresponding l and u
     for (long i = 0; i < n; i++)
     {
-      /*cout << "l[" << i << "]: " << l[i].second << " ";
-			cout << "u[" << i << "]: " << u[i].second << " ";*/
+      // cout << "l[" << i << "]: " << l[i].second << " ";
+      // cout << "u[" << i << "]: " << u[i].second << " ";
       p[l[i].second] += i;
       p[u[i].second] += i;
-      /*for (int j = 0; j < n; j++)
-			{
-				cout << "p[" << j << "]: " << p[j] << " ";
-			}*/
-      cout << endl;
+      // for (int j = 0; j < n; j++)
+      // {
+      //  cout << "p[" << j << "]: " << p[j] << " ";
+      // }
+      // cout << endl;
     }
 
     // final print
