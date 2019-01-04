@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-  int n;
+  unsigned long long n;
   cin >> n;
-  cout << fixed << (int)(pow(3, 3 * n) - pow(7, n));
+  cout << (long long)(pow(3, 3 * n) - pow(7, n)) % 1000000007;
   return 0;
 }
