@@ -12,15 +12,27 @@ int main(void)
   bool d = false;
   for (int i = 0; i < size && !d; i++)
   {
-    for (int j = 1; j < size - i && !d; j++)
+    for (int j = 0; j < size && !d; j++)
     {
       string x = n;
       x.erase(i, j);
-      if (stoi(x) % 8 == 0)
+      if (x.length() > 3)
       {
-        d = true;
-        cout << "YES" << endl
-             << x;
+        if (stoi(x.substr(x.length() - 3)) % 8 == 0)
+        {
+          d = true;
+          cout << "YES" << endl
+               << x;
+        }
+      }
+      else
+      {
+        if (stoi(x) % 8 == 0)
+        {
+          d = true;
+          cout << "YES" << endl
+               << x;
+        }
       }
     }
   }
