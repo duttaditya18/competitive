@@ -1,58 +1,32 @@
-// Wrong Answer?
+#include <iostream>
 
-#include<bits/stdc++.h>
- 
 using namespace std;
 
-int checkprime(int num)
+bool prime(int n)
 {
-	for(int f = 2; f <= num / 2; f++)
-	{
-		if(num % f == 0)
-		{
-			return 0;
-		}
-		else
-		{
-			continue;
-		}
-		return 1;
-	}
-	return 0;
-}
+	if (n == 0 || n == 1)
+		return false;
 
-int genprime(int n1, int n2)
-{
-	for(int i = n1; i <= n2; i++)
+	for (int i = 2; i * i <= n; i++)
 	{
-		int checkc = checkprime(i);
-	    if(checkc == 0)
-	    {
-			continue;
-		}
-		else
-		{
-			cout << i << endl;
-		}
+		if (n % i == 0)
+			return false;
 	}
-	cout << "\n";
-	return 0;
+	return true;
 }
-
 
 int main()
 {
-	int test;
-	cin >> test;
-	for(int i = 0; i < test; i++)
+	int t;
+	cin >> t;
+	while (t--)
 	{
-		int n1;
-		cin >> n1;
-		int n2;
-		cin >> n2;
-		genprime(n1, n2);
+		int m, n;
+		cin >> m >> n;
+		for (int i = m; i <= n; i++)
+			if (prime(i))
+				cout << i << endl;
 	}
-	
+
 	return 0;
 }
-
