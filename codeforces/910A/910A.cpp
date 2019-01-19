@@ -7,8 +7,6 @@ using namespace std;
 int calc(char a[], int l, int r)
 {
   int ren;
-  cout << "doing things from " << l << " to " << r << endl;
-  cout << "c is : " << c << endl;
   for (int i = r; i > l; i--)
   {
     if ((r >= n - 1))
