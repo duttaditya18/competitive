@@ -4,6 +4,8 @@ TASK: beads
 LANG: C++                 
 */
 
+// Brute Force : O(n^2)
+
 #include <iostream>
 #include <fstream>
 #include <algorithm>
