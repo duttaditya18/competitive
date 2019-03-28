@@ -462,3 +462,6 @@ healthchecksdb
 
 tempCodeRunnerFile.*
 out.*
+
+*.out
+*.in
