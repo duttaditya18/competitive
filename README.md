@@ -1,1 +1,3 @@
-comp-prog
+# Competitive
+
+**See:** [Notes](notes/notes.md)
