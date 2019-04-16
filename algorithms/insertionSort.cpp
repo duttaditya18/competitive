@@ -8,6 +8,7 @@ void insertionSort(int a[], int n)
   for (int i = 1; i < n; i++)
   {
     int c = i;
+    // while the left element is less than the right element, exchange them
     while (c > 0 && a[c] < a[c - 1])
     {
       swap(a[c], a[c - 1]);

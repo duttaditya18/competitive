@@ -15,7 +15,7 @@ int selectionSort(int a[], int n)
     swap(a[i], a[minI]);
   }
 }
-
+                            
 int main(void)
 {
   int a[8] = {9, 5, 4, 6, 1, 10, 7, 4};
