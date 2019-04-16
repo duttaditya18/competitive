@@ -68,6 +68,7 @@ void mergeSort(int A[], int l, int r)
   }
 }
 
+// Printing an array
 void print(int A[], int n)
 {
   for (int i = 0; i < n; i++)
