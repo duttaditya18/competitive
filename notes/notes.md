@@ -41,3 +41,4 @@ sort(A.begin(), A.end());
 
 - https://en.wikipedia.org/wiki/Sort_(C++)
 - https://www.geeksforgeeks.org/sort-c-stl/
+- https://stackoverflow.com/a/23985906/7345209
