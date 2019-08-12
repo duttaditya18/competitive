@@ -42,3 +42,46 @@ sort(A.begin(), A.end());
 - https://en.wikipedia.org/wiki/Sort_(C++)
 - https://www.geeksforgeeks.org/sort-c-stl/
 - https://stackoverflow.com/a/23985906/7345209
+
+## Type Conversion
+
+### Explicit
+
+##### Type Casting
+
+```c++
+double x = 2.5;
+
+// (type) expression
+int sum1 = int(x) + 1.5; // Same as (int)x + 1.5 (C-type Casting)
+int sum2 = int(x + 1.5); // Same as (int)(x + 1.5) (C-type Casting)
+int sum3 = x + 1.5;
+cout << sum1 << " " << sum2 << " " << sum3;
+
+// Output: 3 4 4
+```
+
+### Implicit
+
+Also known as coercion, is an automatic type conversion by the compiler during comparisons or assignments.
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/type-conversion-in-c/
+- http://www.cplusplus.com/doc/tutorial/typecasting/ (See also [Type Casting](http://www.cplusplus.com/doc/tutorial/typecasting/#type_casting))
+- https://en.wikibooks.org/wiki/Computer_Programming/Type_conversion
+
+## Ternary Operator
+
+```c++
+// (expression) ? ifTrue : ifFalse
+
+int max = (a > b) ? a : b;
+```
+
+If either `ifTrue` or `ifFalse` have side effects, only one of them will be evaluated.
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/ cc-ternary-operator-some-interesting-observations/
+- http://www.cplusplus.com/articles/1AUq5Di1/
