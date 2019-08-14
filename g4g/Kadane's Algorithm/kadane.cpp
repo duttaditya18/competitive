@@ -10,15 +10,23 @@ int main(void)
     cin >> t;
     while(t--)
     {
-        cout << t;
-        int n, pre = INFINITY, cur;
+        int n;
         cin >> n;
-        int a[n];
+        int arr[n], max = -INFINITY, curr = 0;
         for (int i = 0; i < n; i++)
         {
-            cin >> a[i];
-            pre = max(a[i], )
+            cin >> arr[i];
+            curr += arr[i];
+            if(curr > max)
+            {
+                max = curr;
+            }
+            if(curr < 1)
+            {
+                curr = 0;
+            }
         }
+        cout << max << endl;
 
     }
     return 0;
