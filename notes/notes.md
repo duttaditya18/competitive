@@ -85,3 +85,82 @@ If either `ifTrue` or `ifFalse` have side effects, only one of them will be eval
 
 - https://www.geeksforgeeks.org/ cc-ternary-operator-some-interesting-observations/
 - http://www.cplusplus.com/articles/1AUq5Di1/
+
+## GCD STL
+
+```c++
+cout << __gcd(6, 12);
+```
+
+Only `int` values are allowed to be passed in and functions which might return non-`int` values are not allowed to be nested.
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/stdgcd-c-inbuilt-function-finding-gcd/
+- https://en.cppreference.com/w/cpp/numeric/gcd
+
+## Stack Smashing
+
+Occurs when we try to copy information copy information into a variable or buffer.
+
+Certain protection mechanisms are put in place to prevent this kind of tampering which can potentially result in buffer exploits.
+
+This results in a Runtime Error with the following message: `*** stack smashing detected ***: ./a.exe terminated`
+
+```c++
+char message[10];
+strcpy(message, "Hello, world!");
+// "Hello, world!' is 14 characters long (including the NULL Character) and we only have 10
+```
+
+`-fno-stack-protector` switch doesn't show the Stack Smashing error. The program will probably crash and will be vulnerable to buffer overflow exploits.
+
+**Reference(s):**
+
+- https://www.thegeekstuff.com/2013/02/stack-smashing-attacks-gcc
+
+## Input with Spaces
+
+```c++
+string s;
+getline(cin, s);
+```
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/getline-string-c/
+
+## Format Specifiers (C/C++)
+
+| Specifier | Are |
+| :-: |:-:|
+| d, i | Dec or Int |
+| u | Unsigned Int |
+| o | Octal |
+| x,X | Hexadecimal (lower and uppercase) |
+| `.d`f | Floating Point (`d = number of decimal places`) |
+| `.d`e | Scientific (`d = number of decimal places`) |
+| g | Double |
+| c | Character |
+| s | String |
+| n | Pointer to Int |
+| p | Pointer |
+
+```c++
+printf("%d\n", -5); //-5
+printf("%u\n", 5); //5
+printf("%e\n", 5.5); //5.500000e+00
+printf("%.2f\n", 1.0/3.0); // 0.33
+printf("%.3f\n", 1.0/3.0); // 0.333
+printf("%.2e\n", 1.0/3.0); // 3.33e-001
+printf("%.3e\n", 1.0/3.0); // 3.333e-001
+printf("%c",'a'); // a
+printf("%s","string"); // string
+```
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/format-specifiers-in-c/
+- https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/
+- http://www.cplusplus.com/reference/cstdio/printf/
+- http://docwiki.embarcadero.com/RADStudio/Rio/en/Format_Specifiers_in_C/C++
