@@ -181,3 +181,7 @@ printf("%s","string"); // string
 - http://www.cplusplus.com/reference/map/map/
 - https://www.hackerearth.com/practice/notes/standard-template-library/
 - https://www.hackerrank.com/challenges/cpp-maps/problem
+
+## Data Structures
+
+- https://www.hackerearth.com/practice/notes/c-stls-when-to-use-which-stl/
