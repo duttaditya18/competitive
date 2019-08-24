@@ -132,19 +132,19 @@ getline(cin, s);
 
 ## Format Specifiers (C/C++)
 
-| Specifier | Are |
-| :-: |:-:|
-| d, i | Dec or Int |
-| u | Unsigned Int |
-| o | Octal |
-| x,X | Hexadecimal (lower and uppercase) |
-| `.d`f | Floating Point (`d = number of decimal places`) |
-| `.d`e | Scientific (`d = number of decimal places`) |
-| g | Double |
-| c | Character |
-| s | String |
-| n | Pointer to Int |
-| p | Pointer |
+| Specifier |                       Are                       |
+| :-------: | :---------------------------------------------: |
+|   d, i    |                   Dec or Int                    |
+|     u     |                  Unsigned Int                   |
+|     o     |                      Octal                      |
+|    x,X    |        Hexadecimal (lower and uppercase)        |
+|   `.d`f   | Floating Point (`d = number of decimal places`) |
+|   `.d`e   |   Scientific (`d = number of decimal places`)   |
+|     g     |                     Double                      |
+|     c     |                    Character                    |
+|     s     |                     String                      |
+|     n     |                 Pointer to Int                  |
+|     p     |                     Pointer                     |
 
 ```c++
 printf("%d\n", -5); //-5
@@ -164,3 +164,20 @@ printf("%s","string"); // string
 - https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/
 - http://www.cplusplus.com/reference/cstdio/printf/
 - http://docwiki.embarcadero.com/RADStudio/Rio/en/Format_Specifiers_in_C/C++
+
+## Vectors STL
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/vector-in-cpp-stl/
+- https://www.geeksforgeeks.org/initialize-a-vector-in-cpp-different-ways/
+- https://www.geeksforgeeks.org/ways-copy-vector-c/
+- https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/
+- http://www.cplusplus.com/reference/vector/vector/
+
+## Map STL
+
+- https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
+- http://www.cplusplus.com/reference/map/map/
+- https://www.hackerearth.com/practice/notes/standard-template-library/
+- https://www.hackerrank.com/challenges/cpp-maps/problem
