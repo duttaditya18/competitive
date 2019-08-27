@@ -18,7 +18,7 @@ int main(void)
     {
         //cout << "i: " << i << endl;
         x = 0;
-        for(int j = 0; j <= i; j++)
+        for(int j = 0; j < i; j++)
         {
             //cout << "j: " << j << endl;
             mp[a[j]]++;
@@ -31,7 +31,7 @@ int main(void)
         }
         if(f)
         {
-            for(int j = n - 1; j > i; j--)
+            for(int j = n - 1; j >= i; j--)
             {
                 //cout << "j: " << j << endl;
                 mp[a[j]]++;
