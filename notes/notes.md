@@ -165,6 +165,13 @@ printf("%s","string"); // string
 - http://www.cplusplus.com/reference/cstdio/printf/
 - http://docwiki.embarcadero.com/RADStudio/Rio/en/Format_Specifiers_in_C/C++
 
+## Operator Predence (C/C++)
+
+**Reference(s):**
+
+- http://www.cplusplus.com/doc/tutorial/operators/
+- http://www.cplusplus.com/doc/tutorial/operators/
+
 ## Vectors STL
 
 **Reference(s):**
