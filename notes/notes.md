@@ -176,6 +176,13 @@ printf("%s","string"); // string
 - http://www.cplusplus.com/doc/tutorial/operators/
 - http://www.cplusplus.com/doc/tutorial/operators/
 
+## Integer Literal (C/C++)
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/integer-literal-in-c-cpp-prefixes-suffixes/
+- https://en.wikipedia.org/wiki/Integer_literal
+
 ## Vectors STL (C/C++)
 
 **Reference(s):**
