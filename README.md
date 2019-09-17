@@ -1,3 +1,6 @@
 # Competitive
 
-**See:** [Notes](notes/notes.md)
+**See:**
+
+- [C/C++ Notes](notes/cpp.md)
+- [On-Line Notes](notes/on-line.md)
