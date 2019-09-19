@@ -25,7 +25,7 @@ int main(void)
 
 
     dp[0][0] = 0;
-    long long maxtn = 0;
+    int maxtn = 0;
     for(int i = 1; i <= n; i++)
     {
         maxtn += v[i - 1];
