@@ -225,6 +225,35 @@ cout << (mp.empty() ? "YES" : "NO"); // Output: YES
 - https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
 - https://www.hackerrank.com/challenges/cpp-maps/problem
 
+### Unordered Map
+
+**Reference(s):**
+
+```c++
+unordered_map<string, int> umap;
+
+// Add ELements
+umap["pi"] = 3;
+umap.insert(make_pair("e", 2));
+
+// If key not found in map iterator to end is returned
+cout << (umap.find("pi") == umap.end()); // Output: 1
+
+// Count returns the number of occurences of a key (1 or 0)
+cout << umap.count("phi"); // Output: 0
+
+// itr works as a pointer to pair <string, double>
+unordered_map<string, int>::iterator itr;
+for (itr = umap.begin(); itr != umap.end(); itr++)
+{
+  cout << itr->first << "  " << itr->second << endl;
+}
+```
+
+- https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
+- https://www.geeksforgeeks.org/map-vs-unordered_map-c/
+- https://www.techiedelight.com/check-given-key-exists-map-cpp/
+
 ### Min and Max Element
 
 ```c++

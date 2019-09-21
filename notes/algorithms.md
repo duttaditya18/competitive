@@ -10,3 +10,5 @@
 
 - https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/
 - https://www.geeksforgeeks.org/tabulation-vs-memoization/
+
+- https://stackoverflow.com/questions/14997165/fastest-way-to-get-a-positive-modulo-in-c-c?answertab=votes#tab-top
