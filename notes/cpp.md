@@ -273,3 +273,9 @@ int min_el = *min_element(a.begin(), a.end());
 **Reference(s):**
 
 - https://www.geeksforgeeks.org/how-to-find-the-minimum-and-maximum-element-of-a-vector-using-stl-in-c/
+
+### Upper and Lower Bound
+
+**Reference(s):**
+
+- https://www.studytonight.com/cpp/stl/stl-searching-lower-upper-bound
