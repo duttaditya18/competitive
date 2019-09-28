@@ -1,3 +1,5 @@
+// wow
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -9,6 +11,7 @@ int main(void)
 
     int x[n];
     vector<int> nums;
+    vector<int>::iterator itr;
 
     for(int i = 0; i < n; i++) cin >> x[i];
 
@@ -21,21 +24,15 @@ int main(void)
             if(nums[si] < x[i]) nums.push_back(x[i]);
             else if(nums[si] > x[i])
             {
-                int l = 0, r = si;
-                while(r >= l + 2)
-                {
-                    int k = (l + r) / 2;
-                    if(nums[k] >= x[i]) r = k;
-                    else if(nums[k] < x[i]) l = k;
-                }
-                nums[r] = x[i];
+                itr = lower_bound(nums.begin(), nums.end(), x[i]);
+                *itr = x[i];
             }
         }
     }
 
 
-    for(int i = 0; i < nums.size(); i++) cout << nums[i] << " ";
-    cout << endl;
+    //for(int i = 0; i < nums.size(); i++) cout << nums[i] << " ";
+    //cout << endl;
 
     cout << nums.size() << endl;
     return 0;
