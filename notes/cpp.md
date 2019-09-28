@@ -274,8 +274,10 @@ int min_el = *min_element(a.begin(), a.end());
 
 - https://www.geeksforgeeks.org/how-to-find-the-minimum-and-maximum-element-of-a-vector-using-stl-in-c/
 
-### Upper and Lower Bound
+### Upper and Lower Bound (TODO)
 
 **Reference(s):**
 
-- https://www.studytonight.com/cpp/stl/stl-searching-lower-upper-bound
+- https://www.geeksforgeeks.org/set-upper_bound-function-in-c-stl/
+- https://www.geeksforgeeks.org/lower_bound-in-cpp/
+- https://www.geeksforgeeks.org/upper_bound-and-lower_bound-for-vector-in-cpp-stl/
