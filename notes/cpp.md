@@ -167,6 +167,22 @@ printf("%s","string"); // string
 - http://www.cplusplus.com/reference/cstdio/printf/
 - http://docwiki.embarcadero.com/RADStudio/Rio/en/Format_Specifiers_in_C/C++
 
+### Copy Array
+
+```c++
+#include <iterator>
+#include <algorithm>
+
+memcpy(b, a, sizeof(a)); // Copy a[] to b[]
+std::copy(std::begin(a), std::end(a), std::begin(a)); // Copy a[] to b[]
+```
+
+**Reference(s):**
+
+- https://social.msdn.microsoft.com/Forums/en-US/73a633d1-9787-4973-a741-054a7b4032a2/
+- https://stackoverflow.com/q/16137953/7345209
+- https://www.geeksforgeeks.org/different-methods-copy-c-stl-stdcopy-copy_n-copy_if-copy_backwards/
+
 ### Operator Predence (TODO)
 
 **Reference(s):**
