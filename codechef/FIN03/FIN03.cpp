@@ -7,13 +7,14 @@ int dy[] = {1, -1, 1, -1, 2, -2, 2, -2};
 
 int main(void)
 {
-    string str;
-    getline (cin, str);
-    while(str != "END")
+    string s, a, b;
+    while(getline(cin, s))
     {
-        int x = stoi(str.substr(0, str.find(' ')));
-        int y = stoi(str.substr(str.find(' ') + 1, str.size() - str.find(' ') + 1));
-        //cout << x << " " << y << endl;
-        getline (cin, str);
+        if(s == "END") break;
+        stringstream str(s);
+
+        str >> a >> b;
+        cout << a << " " << b << "\n";
     }
+    return 0;
 }
