@@ -297,3 +297,45 @@ int min_el = *min_element(a.begin(), a.end());
 - https://www.geeksforgeeks.org/set-upper_bound-function-in-c-stl/
 - https://www.geeksforgeeks.org/lower_bound-in-cpp/
 - https://www.geeksforgeeks.org/upper_bound-and-lower_bound-for-vector-in-cpp-stl/
+
+### C++ Memory Layout
+
+Stacks have fixed amount of memory. Heap has several parts and has a large memory. So, we should declare large arrays in the heap.
+
+This will allocate in the BSS segment, which is a part of the heap:
+
+```c++
+static int c[1000000];
+int main()
+{
+   cout << "done\n";
+   return 0;
+}
+```
+
+This will allocate in the DATA segment, which is a part of the heap too:
+
+```c++
+int c[1000000] = {};
+int main()
+{
+   cout << "done\n";
+   return 0;
+}
+```
+
+This will allocate at some unspecified location in the heap:
+
+```c++
+int main()
+{
+  int\* c = new int[1000000];
+  cout << "done\n";
+  return 0;
+}
+```
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/memory-layout-of-c-program/
+- https://stackoverflow.com/q/1847789/7345209
