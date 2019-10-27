@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string f0 = "What are you doing at the end of the world? Are you busy? Will you save us?";
+string str1 = "What are you doing while sending \"";
+string str2 = "\"? Are you busy? Will you send \"";
+string str3 = "\"?";
+
+int findone(int n, int k)
+{
+    if(k <= str1) return str1[k - 1];
+}
+
+int main(void)
+{
+    int sizef[100001] = {};
+    sizef[0] = f0.size();
+
+    for(int i = 1; i <= 100000; i++)
+    {
+        sizef[i] = 2 * sizef[i - 1] + str1.size() + str2.size() + str3.size();
+        cout << sizef[i] << "\n";
+    }
+
+}
