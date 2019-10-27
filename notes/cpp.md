@@ -5,8 +5,17 @@
 ### Redirect `cin` and `cout` to files
 
 ```c++
+// works throughout the file (recommnded)
+freopen("input.txt", "w", stdin);
+freopen("output.txt", "w", stdout);
+
+// only works in the function it is initialized in
 ifstream cin("input.txt");
 ofstream cout("output.txt");
+```
+
+```Shell
+$ a.out < input.txt > output.txt
 ```
 
 **Reference(s):**
@@ -339,3 +348,24 @@ int main()
 
 - https://www.geeksforgeeks.org/memory-layout-of-c-program/
 - https://stackoverflow.com/q/1847789/7345209
+
+### Check if using Code Judge
+
+```c++
+#ifdef ONLINE_JUDGE
+// If code IS running on judge
+#else
+// If code is NOT running on judge
+#endif
+
+
+#ifndef ONLINE_JUDGE
+// If code is NOT running on judge
+#else
+// If code IS running on judge
+#endif
+```
+
+**Reference(s):**
+
+- https://codeforces.com/blog/entry/14118
