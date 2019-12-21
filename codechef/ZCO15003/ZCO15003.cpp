@@ -4,49 +4,39 @@ using namespace std;
 
 bool comp(pair<int, int> p1, pair<int, int> p2)
 {
-    return (p1.first <= p2.first);
+    if(p1.first != p2.first) return (p1.first < p2.first);
+    return (p1.second < p2.second);
 }
 
 int main(void)
 {
     int n; cin >> n;
-
-    // 0 - Start, 1 - End
     vector<pair<int, int>> v;
 
     int x, y;
-
     for(int i = 0; i < n; i++)
     {
         cin >> x >> y;
-        v.push_back(make_pair(x, 0));
-        v.push_back(make_pair(y, 1));
+        v.push_back(make_pair(x, y));
     }
 
     sort(v.begin(), v.end(), comp);
 
-    bool b = true;
-    int ans = 0;
+    // for(int i = 0; i < n; i++) cout << v[i].first << " " << v[i].second << endl;
 
-    //for(int i = 0; i < (2*n); i++) cout << v[i].first << " " << v[i].second << endl;
+    int l = v[0].first, r = v[0].second, c = 1;
 
-    for(int i = 0; i < (2*n); i++)
+    for(int i = 1; i < n; i++)
     {
-        if(b)
+        // cout << l << " " << r << " " << v[i].first << " " << v[i].second << endl;
+        if(v[i].first <= r) r = min(r, v[i].second);
+        else
         {
-            if(v[i].second == 0) b = !b;
-            else continue;
+            c++;
+            r = v[i].second;
         }
-        else if(!b)
-        {
-            if(v[i].second == 1)
-            {
-                ans++;
-                b = !b;
-            }
-            else continue;
-        }
+        l = v[i].first;
     }
 
-    cout << ans << endl;
+    cout << c << endl;
 }
