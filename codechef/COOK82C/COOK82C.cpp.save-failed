@@ -1,0 +1,74 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define MAXN 1000010
+
+int qu[MAXN];
+
+int main(void)
+{
+    int n, m; cin >> n >> m;
+    int a[n];
+
+    queue<int> q1, q2;
+
+    for(int i = 0; i < n; i++) cin >> a[i];
+
+    sort(a, a + n, greater<int>());
+    for(auto u : a) q1.push(u);
+
+    int cur = 0, idx = 1;
+
+    while((!q1.empty()) || (!q2.empty()) || idx > 1000000)
+    {
+        cout << idx << " " << q1.front() << " " << q2.front() << endl;
+        if(cur == 0)
+        {
+            if(q1.empty())
+            {
+                cur = !cur;
+                continue;
+            }
+
+            if(q1.front() >= q2.front())
+            {
+                qu[idx] = q1.front();
+                q2.push(q1.front() / 2);
+                q1.pop();
+                idx++;
+            }
+            else
+            {
+                qu[idx] = q1.front();
+                q1.push(q2.front() / 2);
+                q2.pop();
+                idx++;
+            }
+        }
+        else if(cur = 1)
+        {
+            if(q2.empty())
+            {
+                cur = !cur;
+                continue;
+            }
+
+            if(q1.front() >= q2.front())
+            {
+                qu[idx] = q1.front();
+                q2.push(q1.front() / 2);
+                q1.pop();
+                idx++;
+            }
+            else
+            {
+                qu[idx] = q1.front();
+                q1.push(q2.front() / 2);
+                q2.pop();
+                idx++;
+            }
+        }
+    }
+
+    for(int i = 0; i <= idx; i++) cout << qu[i] << " "; cout << endl;
+}

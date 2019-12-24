@@ -369,3 +369,20 @@ int main()
 **Reference(s):**
 
 - https://codeforces.com/blog/entry/14118
+
+### Stringstream
+
+```c++
+string str;
+cin >> str;
+
+stringstream ss(str);
+
+int x, y;
+ss >> x >> y;
+```
+
+**Reference(s):**
+
+- https://www.geeksforgeeks.org/stringstream-c-applications/
+- http://www.cplusplus.com/reference/sstream/stringstream/stringstream/

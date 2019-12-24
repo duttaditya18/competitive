@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+// n, m
+int dp[101][101];
+
+class AvoidRoads
+{
+    public:
+    long long numWays(int n, int m, vector <string> bad)
+    {
+        vector<pair<int, int>> bd[n][m];
+
+        for(auto u : bad)
+        {
+            bd[u[0]][u[2]].push_back(make_pair(u[4], u[6]));
+            bd[u[4]][u[6]].push_back(make_pair(u[0], u[2]));
+        }
+        cout << "x";
+        for(auto u : bd[0][0])
+        {
+            cout << "x";
+        }
+	}
+};
+
+int main(void)
+{
+    AvoidRoads x;
+    cout << x.numWays(6, 6, {"0 0 0 1","6 6 5 6"});
+}
