@@ -1,0 +1,200 @@
+Hi all,
+
+I am posting some useful sites for Informatics Olympiad:
+
+First of all, get a Dev C++ compiler or if you have Ubuntu or Kubuntu
+(Linux), it cannot get better.If you are not able to execute in Linux,
+try seraching in the nnet or ask someone (I do not know fully.)
+
+Download Dev from
+http://www.bloodshed.net/dev/devcpp.html.
+Get  Dev-C++ 5.0 beta 9.2 (4.9.9.2) (9.0 MB) with Mingw/GCC 3.4.2.
+Please do not use Turbo C++.It has still not yet come out of the Stone
+Age.
+
+
+
+Zonal Informatics Olympiad is difficult to get through.I think that it
+needs a bit of luck.ZIO has no programming,but only some reasoning
+type questions.
+But, last year ZCO was introduced, which is an online programming exam
+of two problems, and serves as an alternate route to INOI. I think
+that ZCO would be a safer bet than ZIO, even though one can give
+both.I think 1 correct problem would be enough to clear ZCO.
+So,be sure to give ZCO.But before that one has to know something in
+programming.Before ZCO, the 16 solutions in IARCS should be enough.
+
+
+Previous year ZIO and INOI question papers are available in the IARCS
+site:
+
+http://www.iarcs.org.in/
+
+Last year's ZCO paper has been uploaded in this group's files.
+
+
+The solutions of 16 or so problems in the Advanced section covers most
+of the basic concepts required for ZCO and INOI
+http://www.iarcs.org.in/inoi/contests/allproblems.php
+
+
+One can practice in this online judge by submitting codes.
+http://opc.iarcs.org.in/pages/home/
+
+
+
+For INOI:
+
+
+Be thorough with IARCS solutions.Then read "Introduction To Algorithms
+by Cormen, Lieserson, Rivest and Stein (CLRS)".It is a hefty book and
+one cannot except to read or understand everything in it.But it is a
+great book and covers mostly all topics till the camp.
+
+
+You can download Introduction To Algorithms (CLRS) from this site.
+
+http://www.eknigu.com/info/Cs_Computer%20science/CsAl_Algorithms/Corm...
+
+Is about 11.3 Mb
+Wait for about 15 seconds after going to the site. Download option comes at the bottom of the page.
+
+ 
+
+
+Solutions for CLRS:
+
+
+http://www.scribd.com/doc/7332642/The-MIT-Press-Introduction-to-Algorithms-2nd-Edition-Solutions
+
+Solutions to all problems are not there, I guess.
+
+
+Some of the important chapters (according to me):
+Just go through the first 2-3 chapters.
+
+
+6.Heapsort
+7.Quicksort  (very important)
+8.2 Counting Sort
+10.Elemantary Data Structures (Stacks and queues very important)
+12.Binary Search Trees
+15.Dynamic Programming(DP) (very important)
+16.Greedy Agorithms
+21.Data Structures for Disjoint Sets (do this later)
+
+22 - 26 -All Graph Algorithms(totally):
+22-Breath first search and Depth first search-(very very important)
+24.3-Dijkstra's Algorithm (very important)
+
+31.Number-Theoretic Algorithms(do this later)
+
+33.Computational Geometry
+A,B,C Appendix (do this first)
+
+
+Implementation codes will not be provided in the book.That has to be
+practiced (please practice.I did not do it and suffered-I would
+implement many standard codes for the first time during the tests and
+waste time!! )
+
+
+
+See also
+http://www.cplusplus.com/doc/tutorial/
+For basics of C++.
+This is told to be good by everyone.Even MIT uses this.
+
+
+
+DO READ THIS:
+Nadeem
+http://web.iiit.ac.in/~nadeem.moiduug08/cpptutorial.htm
+Be thorough with this.
+
+STLs are THE most important things (it's the only thing for which they teach you syntax) in the camp. It wouldn't be very
+useful in INOI except for what are in Nadeem's site.
+
+
+But to know more about STLs (it's clearly explained here with explanation, examples, a page for each function and the complexity for each!!!) :
+
+http://www.cplusplus.com/reference/algorithm/  (This contains operations which are common)
+
+
+This contains new data structures. Important points very well explained. But does not contain the actual working of the data structures. Just points form:
+
+http://www.cplusplus.com/reference/stl/
+
+Read vectors from that first.
+
+
+
+SGI STL
+http://www.sgi.com/tech/stl/
+It is a very scary site with Martian words (atleast for me, before the
+camp).
+
+
+It was explained somewhat clearly in the camp.I have requested Nadeem
+to explain more about STLs in his website. Will post later of any development.
+
+
+
+For data structures and techniques,from the greatest Olympiadian!!
+Bruce Merry
+http://www.brucemerry.org.za/manual/
+
+
+Topcoder is the foremost site in Informatics Contests.(Keshav Dadhania
+is 3rd rank in the world in that site)
+http://www.topcoder.com/
+I haven't seen it for more than 5 minutes and repent for it.Supposed
+to have the all the problems on the earth.
+
+
+It's tutorials are supposed to be very very good:
+
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index
+
+
+
+http://www.iarcs.org.in/inoi/programming-contest.php
+The USACO tutorials is also supposed to be very good.
+SPOJ also contains loads of problems.
+
+Another online contest site
+http://www.codechef.com/
+
+
+
+Informatics Book:
+
+Springer_2_.Verlag-Programming.Challenges-2003.pdf.bz2
+
+It covers nearly all the topics with coded algorithms- which is very rare to find. Problems with hints are provided at end of every chapter.
+
+Uploaded as a file in this site.
+
+
+
+I have uploaded the IOITC Notes as a file in this site. It is very good. But not of much help for INOI. Just see Binary Index Trees (BIT) and segment trees.
+
+
+
+
+Varun Jalan of Code Chef fame, has given a lecture on basic data
+structures- arrays, lists, stacks, queues (all for a around 15
+minutes) and advanced data structures- Binary Index Tree (BIT) ,
+segment trees and priority queues (along with heaps). It's good, but
+it would be better if you know about before and then see it:
+http://www.youtube.com/user/TheCodechef#play/uploads/6/_Xa8zoWL__E
+
+
+
+
+
+Again:Give ZCO.INOI also needs only about 1 full problem to qualify(I
+guess).1 and a half is surely through.Also , in the camp,it is very
+easy to come within top 10 or so, if some practice is done.
+
+FIRST TO DO :16 solutions in IARCS 
