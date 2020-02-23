@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#defint ll long long
+
+const int maxn = 2000000;
+
+ll phi[maxn + 10];
+ll dep[maxn + 10];
+
+int main(void)
+{
+    for(int i = 2; i <= maxn; i++) phi[i] = i - 1;
+    dep[1] = 0;
+
+    for(int i = 2; i <= maxn; i++)
+    {
+        for(int j = i + i; j <= maxn; j += i)
+            phi[j] -= phi[i];
+        dep[i] = dep[phi[i]] + 1;
+    }
+
+    cout << dep[123] << "\n";
+    ll x = 0;
+    for(int i = 1; i <= 10; i++) x += dep[i];
+    cout << x << "\n";
+
+}

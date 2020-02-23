@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+// 160126135
+const long long maxn = 1e5;
+
+long long phi[maxn + 10];
+map<long long, long long> m;
+long long n;
+
+int main(void)
+{
+    // ios_base::sync_with_stdio(NULL);
+    cin.tie(0);
+
+    for(int i = 2; i <+ maxn; i++) phi[i] = i - 1;
+    for(int i = 2; i <= maxn; i++)
+    {
+        for(int j = i + i; j <= maxn; j += i)
+            phi[j] -= phi[i];
+        if(m[phi[i]] == 0) m[phi[i]] = i;
+    }
+
+    int t; cin >> t;
+
+    while(t--)
+    {
+        cin >> n;
+        if(m[n] != 0)
+            cout << m[n];
+        else
+            cout << -1;
+        cout << "\n";
+    }
+    return 0;
+}
